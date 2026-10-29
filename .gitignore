@@ -1,0 +1,18 @@
+# Секреты — никогда не коммитим
+.env
+*.env
+!.env.example
+
+# Сборка
+build/
+.gradle/
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Логи
+*.log
