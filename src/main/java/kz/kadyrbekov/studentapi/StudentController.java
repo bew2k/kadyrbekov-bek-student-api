@@ -90,6 +90,12 @@ public class StudentController {
         return ResponseEntity.noContent().build();
     }
 
+    // ---- READ (search by surname) — улучшение, Bek Kadyrbekov ----
+    @GetMapping("/students/search")
+    public List<Student> search(@org.springframework.web.bind.annotation.RequestParam String surname) {
+        return repository.findBySurnameIgnoreCase(surname);
+    }
+
     // ---- Обработка ошибок ----
     @ExceptionHandler(StudentNotFoundException.class)
     public ResponseEntity<Map<String, Object>> notFound(StudentNotFoundException ex) {
