@@ -21,3 +21,6 @@ curl http://localhost:8081/api/info
 | GET | /api/students/{id} | get one |
 | PUT | /api/students/{id} | update |
 | DELETE | /api/students/{id} | delete |
+
+## Change log
+- Bek Kadyrbekov: added `GET /api/students/search?surname=` (read operation improvement).
