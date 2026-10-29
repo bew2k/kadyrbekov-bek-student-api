@@ -1,6 +1,6 @@
 # kadyrbekov-bek-student-api
 
-Spring Boot CRUD application (Students) with PostgreSQL.
+Main branch by Bek Kadyrbekov: Student API for IT2-2306.
 
 **Author:** Bek Kadyrbekov — group IT2-2306 — Student ID 35534
 
