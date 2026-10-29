@@ -58,6 +58,6 @@ class StudentApiTests {
     void nonexistentStudentReturns404() throws Exception {
         mvc.perform(get("/api/students/999999"))
                 .andExpect(status().isNotFound())
-                .andExpect(jsonPath("$.status").value(500));
+                .andExpect(jsonPath("$.status").value(404));
     }
 }
